@@ -1,1 +1,20 @@
+/*element css*/
+html, body{
+    background-color: lightslategray;
+    color: black;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-family: 'Courier New', Courier, monospace ;
+
+}
+/*content display*/
+.center {
+    margin: auto;
+    width: 80%;
+    border: 3px solid white;
+    padding: 10px;
+}
+
+/*media queries*/
 
