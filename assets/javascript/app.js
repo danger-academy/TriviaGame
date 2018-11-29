@@ -3,6 +3,18 @@
 // and a final summary of correct/incorrect/unanswered questions is displayed at the end.
 
 // Start with the "start button"
+$('#start').on('click',function(){
+	$('#start').remove();
+	game.loadQuestion();
+})
+
+$(document).on('click','.answer-button',function(e){
+	game.clicked(e);
+})
+
+$(document).on('click','#reset',function(){
+	game.reset();
+})
 
 // Here we will define our questions and answers
 
