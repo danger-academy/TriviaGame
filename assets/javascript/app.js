@@ -140,9 +140,9 @@ var game = {
         game.correct++;
         $('#content').html('<h2>Ooooooh, good for YOU.</h2>');
         if (game.currentQuestion == questions.length - 1) {
-            setTimeout(game.results, 3 * 1000);
+            setTimeout(game.results, 2 * 1000);
         } else {
-            setTimeout(game.nextQuestion, 3 * 1000);
+            setTimeout(game.nextQuestion, 2 * 1000);
         }
     },
     answeredIncorrectly: function () {
