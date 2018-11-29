@@ -1,13 +1,5 @@
 /*element css*/
-h1,
-h2,
-h3,
-p {
-  margin-bottom: 20px;
-}
-p:last-child {
-  margin-bottom: 0;
-}
+
 h1,
 h2,
 h3 {
@@ -16,15 +8,17 @@ h3 {
   color: black;
 }
 h1 {
-  text-align: center;
+  align: center;
   padding-bottom: 20px;
   font-size: 30px;
   line-height: 49px;
-  border-bottom: 3px solid #ddd;
+  border-bottom: 2px solid #ddd;
 }
-h2,
+h2 {
+  font-size: 24;
+}
 h3 {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 html, body{
@@ -43,7 +37,10 @@ html, body{
     border: 3px solid white;
     padding: 10px;
 }
-
+.answer-button {
+    margin: 5;
+    padding: 3;
+}
 /*media queries*/
 
 
