@@ -1,4 +1,32 @@
 /*element css*/
+h1,
+h2,
+h3,
+p {
+  margin-bottom: 20px;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+h1,
+h2,
+h3 {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+  color: black;
+}
+h1 {
+    align-self: auto;
+  padding-bottom: 20px;
+  font-size: 30px;
+  line-height: 49px;
+  border-bottom: 3px solid #ddd;
+}
+h2,
+h3 {
+  font-size: 22px;
+}
+
 html, body{
     background-color: lightslategray;
     color: black;
@@ -17,4 +45,5 @@ html, body{
 }
 
 /*media queries*/
+
 
