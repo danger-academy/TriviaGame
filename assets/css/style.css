@@ -8,11 +8,8 @@ h3 {
   color: black;
 }
 h1 {
-  align: center;
   padding-bottom: 20px;
   font-size: 30px;
-  line-height: 49px;
-  border-bottom: 2px solid #ddd;
 }
 h2 {
   font-size: 24;
@@ -30,7 +27,11 @@ html, body{
     font-family: 'Courier New', Courier, monospace ;
 
 }
-
+.container{
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
 #content {
     margin: auto;
     width: 80%;
