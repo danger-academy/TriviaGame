@@ -1,5 +1,5 @@
 // Simple game, a timed trivia game where one multiple-choice question at a time is displayed, 
-// where the timer encompasses the entirety of the game,
+// where the timer runs for each question,
 // and a final summary of correct/incorrect/unanswered questions is displayed at the end.
 
 // Start with the "start button"
