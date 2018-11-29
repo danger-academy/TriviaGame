@@ -8,8 +8,8 @@ html, body{
     font-family: 'Courier New', Courier, monospace ;
 
 }
-/*content display*/
-.center {
+
+#content {
     margin: auto;
     width: 80%;
     border: 3px solid white;
