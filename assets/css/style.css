@@ -16,7 +16,7 @@ h3 {
   color: black;
 }
 h1 {
-    align-self: auto;
+    align: center;
   padding-bottom: 20px;
   font-size: 30px;
   line-height: 49px;
