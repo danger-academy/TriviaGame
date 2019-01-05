@@ -1,34 +1,33 @@
 /*element css*/
 
-h1,
-h2,
-h3 {
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: 700;
-  color: black;
-}
 h1 {
+  font-family: 'FeedjiqueRegular'; 
+  font-weight: normal; 
+  font-style: normal; 
+  color: black;
   padding-bottom: 20px;
-  font-size: 30px;
+  font-size: 72px;
+  font-weight: 200;
 }
 h2 {
   font-size: 24;
 }
 h3 {
-  font-size: 20px;
+  font-size: 24;
 }
-
 html, body{
-    background-color: lightslategray;
+  background-image: url(../images/grunge-bg2.jpg);
     color: black;
-    margin: 0;
+    margin-top: 50px;
     padding: 0;
     line-height: 1.6;
-    font-family: 'Courier New', Courier, monospace ;
-
+}
+#main-game {
+    background-image: url(../images/grunge-bg.png);
+    padding: 25px 0px 50px 0px;
 }
 .container{
-    margin: auto;
+    margin-top: 50px;
     width: 100%;
     text-align: center;
 }
