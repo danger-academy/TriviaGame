@@ -19,4 +19,6 @@ The game in which everything you thought you knew is on trial for the crime of b
 
 ***
 ### Technologies Utilized
-*
+* Bootstrap
+* Javascript
+* jQuery
