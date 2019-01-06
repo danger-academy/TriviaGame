@@ -109,7 +109,7 @@ var game = {
         game.unanswered++;
         $('#content').html('<h2>Pencils down!</h2>')
         $('#content').append('<h3> The only acceptable answer was : ' + questions[game.
-            currentQuestion].correctAnswer + '<br><img src=" ' + questions[game.
+            currentQuestion].correctAnswer + '<br><br><img src=" ' + questions[game.
                 currentQuestion].image + ' ">' + '</h3>');
         if (game.currentQuestion == questions.length - 1) {
             setTimeout(game.results, 3 * 1000);
@@ -139,7 +139,7 @@ var game = {
         console.log("You Got It");
         clearInterval(timer);
         game.correct++;
-        $('#content').html('<h2>Ooooooh, good for YOU. ' + '<br><img src=" ' + questions[game.
+        $('#content').html('<h2>Ooooooh, good for YOU. ' + '<br><br><img src=" ' + questions[game.
             currentQuestion].image + ' ">' + '</h2>');
         if (game.currentQuestion == questions.length - 1) {
             setTimeout(game.results, 3 * 1000);
@@ -153,7 +153,7 @@ var game = {
         game.incorrect++;
         $('#content').html('<h2>HA! Was that..was that a JOKE?</h2>');
         $('#content').append('<h3> The only acceptable answer was : ' + questions[game.
-            currentQuestion].correctAnswer + '<br><img src=" ' + questions[game.
+            currentQuestion].correctAnswer + '<br><br><img src=" ' + questions[game.
                 currentQuestion].image + ' ">' + '</h3>');
         if (game.currentQuestion == questions.length - 1) {
             setTimeout(game.results, 3 * 1000);
