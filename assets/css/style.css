@@ -53,6 +53,11 @@ html, body{
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
 }
+.ansimg {
+    border-radius: 10px;
+    max-height: 220px;
+    max-width: 220px;
+}
 /*media queries*/
 
 

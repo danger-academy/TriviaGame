@@ -18,7 +18,7 @@ $(document).on('click', '#reset', function () {
 
 // Here we will define our questions and answers and corresponding images
 var questions = [{
-    question: "Which album was named by Magnet Magazine as the Best Album of the 90's",
+    question: "Which LP was named by Magnet Magazine as the Best Album of the 90's",
     answers: ["Radiohead ~ OK Computer", "Beck ~ Odelay", "Nirvana ~ Nevermind", "Neutral Milk Hotel ~ In The Aeroplane Over The Sea"],
     correctAnswer: "Neutral Milk Hotel ~ In The Aeroplane Over The Sea",
     image: "./assets/images/aeroplane.jpg"
@@ -39,7 +39,7 @@ var questions = [{
     image: "./assets/images/temple.jpg"
 }, {
     question: "Which band or artist is widely credited with bringing trip hop to the mainstream, especially for US audiences?",
-    answers: ["Tone Loc", "Portishead", "Nirvana", "The Offspring"],
+    answers: ["Tone Loc", "Portishead", "Nirvana", "311"],
     correctAnswer: "Portishead",
     image: "./assets/images/portishead.png"
 }, {
@@ -54,7 +54,7 @@ var questions = [{
     image: "./assets/images/muses.jpg"
 }, {
     question: "Which band formed in 1981, but in 1991 was given credit for 'breaking punk' by touring with bands such as Nirvana, Babes in Toyland, and Dinosaur Jr.?",
-    answers: ["Nirvana", "Sonic Youth", "Folk Implosion", "The Ramones"],
+    answers: ["Nirvana", "Sonic Youth", "Folk Implosion", "Blonde Redhead"],
     correctAnswer: "Sonic Youth",
     image: "./assets/images/sonic.jpg"
 }, {
@@ -63,8 +63,18 @@ var questions = [{
     correctAnswer: "Elton John ~ Candle in the Wind",
     image: "./assets/images/elton.png"
 }, {
+    question: "Which band released their first LP, Sackcloth & Ashes, in 1995?",
+    answers: ["TOOL", "16 Horsepower", "Nirvana", "Salt"],
+    correctAnswer: "16 Horsepower",
+    image: "./assets/images/horsepower.jpg"
+}, {
+    question: "Which band's debut LP, Other Animals, was released in 2001, despite the band having formed in 1999 in order to qualify for this game's theme?",
+    answers: ["Erase Errata", "Nirvana", "Le Tigre", "Electrelane"],
+    correctAnswer: "Erase Errata",
+    image: "./assets/images/errata.jpg"
+}, {
     question: "Which band, though thoroughly identified with the 90's, actually debuted in the 80's with their album, Bleach?",
-    answers: ["The Bee Gee's", "Aerosmith", "N*SYNC", "Nirvana"],
+    answers: ["Limp Bizkit", "The Doors", "N*SYNC", "Nirvana"],
     correctAnswer: "Nirvana",
     image: "./assets/images/nirvana.jpg"
 }];
@@ -109,7 +119,7 @@ var game = {
         game.unanswered++;
         $('#content').html('<h2>Pencils down!</h2>')
         $('#content').append('<h3> The only acceptable answer was : ' + questions[game.
-            currentQuestion].correctAnswer + '<br><br><img src=" ' + questions[game.
+            currentQuestion].correctAnswer + '<br><br><img class="ansimg" src=" ' + questions[game.
                 currentQuestion].image + ' ">' + '</h3>');
         if (game.currentQuestion == questions.length - 1) {
             setTimeout(game.results, 3 * 1000);
@@ -139,7 +149,7 @@ var game = {
         console.log("You Got It");
         clearInterval(timer);
         game.correct++;
-        $('#content').html('<h2>Ooooooh, good for YOU. ' + '<br><br><img src=" ' + questions[game.
+        $('#content').html('<h2>Ooooooh, good for YOU. ' + '<br><br><img class="ansimg" src=" ' + questions[game.
             currentQuestion].image + ' ">' + '</h2>');
         if (game.currentQuestion == questions.length - 1) {
             setTimeout(game.results, 3 * 1000);
@@ -153,7 +163,7 @@ var game = {
         game.incorrect++;
         $('#content').html('<h2>HA! Was that..was that a JOKE?</h2>');
         $('#content').append('<h3> The only acceptable answer was : ' + questions[game.
-            currentQuestion].correctAnswer + '<br><br><img src=" ' + questions[game.
+            currentQuestion].correctAnswer + '<br><br><img class="ansimg" src=" ' + questions[game.
                 currentQuestion].image + ' ">' + '</h3>');
         if (game.currentQuestion == questions.length - 1) {
             setTimeout(game.results, 3 * 1000);
